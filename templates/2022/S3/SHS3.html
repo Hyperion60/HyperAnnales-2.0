@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Anglais</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Yellow_pack.pdf">Yellow package</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Blue_package.pdf">Blue package</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Ouverture Culturelle</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Essay_OC.pdf">Sujet Essay</a>
+	</div></div>
+	<div class="card red lighten-4">
+		<div class="card-content">
+		<span class="card-title">Partiel Anglais</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/2022_spe_s3_anglais_partiel_c.pdf">Correction</a>
+	</div></div>
+{% endblock %}

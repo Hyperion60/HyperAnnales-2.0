@@ -1,0 +1,10 @@
+{% extends "base.html" %} <!--Obligatoire-->
+{% block content %} <!--Obligatoire-->
+	<div class="card cyan lighten-4">
+		<!--     ^^^^ couleur (cyan(td) green(cours) red(controle))-->
+		<div class="card-content">
+		<span class="card-title">Cours Amphi</span><!--Titre du cadre-->
+		<p>Il manque le cours du 08/10/19</p><!--Annotation si necessaire-->
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/<nom du pdf>/"><Titre du pdf></a>
+	</div></div>
+{% endblock %} <!--Obligatoire-->

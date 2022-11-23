@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Les annales, les TD et les corrections de l'EPITA"/>
+	<meta name="keywords" content="annales, examens, exams, TD, correction, corrigés, epita, sup, spe"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://materializecss.com/css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+
+</head>
+
+<body style="background-color: #eeeeee">
+<div class="row">
+<nav class="top-nav">
+<center><h1 style="color:#000000;">HyperAnnales</h1>
+</center></nav>
+<div class="col s3">
+</div>
+<div class="col s9">
+	<div class="col s9">
+	{% if matiere != None %}
+		<div class="card grey lighten-1">
+		<div class="card-content">
+		<span class="card-title"><h5><center>{{ annee }}/{{ semestre }}/{{ matiere }}</center></h5></span>
+		</div></div>
+	{% endif %}
+		{% block content %}{% endblock %}
+	</div>
+</div>
+<script>
+ $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+</script>
+</body>   
+</html>
+

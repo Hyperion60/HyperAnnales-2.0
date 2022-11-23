@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Cours Amphi</span>
+        <ul>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cours_reseau_1.pdf/">Cours du 01/10/19 au 15/10/19</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cours_reseau_2.pdf/">Cours du 29/10/19 au 06/11/19</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cours_reseau_3.pdf/">Cours du 25/11/19</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/reseau-3.md/">Cours du 25/11/19 (Format Markdown)</a></li>
+            <li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/reseau-4.md/">Cours du 10/12/19 (Format Markdown)</a></li>
+        </ul>
+	</div></div>
+{% endblock %}

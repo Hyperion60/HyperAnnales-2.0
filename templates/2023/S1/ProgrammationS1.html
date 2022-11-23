@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+	<h2>Semestre 1 | Programmation</h2>
+	<p>
+		Liste des différents TP :
+	</p>
+	<div id="chapitre">
+		<h3>TP 2 : Patterns & Fractales</h3>
+		<ul id="details-chapitre">
+			<li><a style="color:#FF0000;" href="https://youtu.be/mfBFzwxA5EI">Reportage Fractales</a></li>
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/tp2-S1-fractales-patterns.pdf/">Sujet du TP</a></li>
+			<li><a href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/Fractales.zip/">Correction</a></li>
+		</ul>
+	</div>
+	<div id="chapitre">
+		<h3>TP 3 : Listes & Midterms</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/tp3-S1-Lists&Midterms.pdf/">Sujet du TP</a></li>
+			<li><a href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/Listes&Midterms.zip/">Correction</a></li>
+		</ul>
+	</div>
+	<div id="chapitre">
+		<h3>TP 4 : Game Of Life</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/tp4-S1-gameOfLife.pdf/">Sujet du TP</a></li>
+			<li><a href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/GameOfLife.zip/">Demos</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/correction-tp3.ml/">Correction</a></li>
+		</ul>
+	</div>
+{% endblock %}

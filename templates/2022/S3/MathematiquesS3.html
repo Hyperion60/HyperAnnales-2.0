@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Chapitre 1 : Les séries</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Series_numeriques.pdf/">Sujet</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Chapitre 2 : Espaces Vectoriels</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Algebre_lineaire_I.pdf/">Sujet</a>
+	</div></div>
+	<div class="card red lighten-4">
+		<div class="card-content">
+		<span class="card-title">Contrôle TD1</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/ctd-s3-01.pdf/">Sujet</a>
+	</div></div>
+	<div class="card red lighten-4">
+		<div class="card-content">
+		<span class="card-title">Midterm</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/2022-midterm-s3-Maths.pdf/">Sujet</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/midterm-s3-correction.pdf/">Correction</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Chapitre 3 : Matrices</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Algebre_lineaire_II.pdf/">Sujet</a>
+	</div></div>
+	<div class="card red lighten-4">
+		<div class="card-content">
+		<span class="card-title">Partiel</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/partiel_s3_maths.pdf/">Sujet</a>
+	</div></div>
+{% endblock %}

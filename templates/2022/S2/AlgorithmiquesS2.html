@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Chapitre 12 : Matrices</span>
+		<ul>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td12-s2-sujet.pdf/">Sujet</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/matrix.py/">Bibliotèque Python (matrix.py)</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/td12-s2-test.zip/">Fichiers tests</a></li>
+		</ul>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Chapitre 13 : Arbres Binaires (ARB)</span>
+		<ul>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td13-s2-sujet.pdf/">Sujet</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/bintreesize.py/">Bibliotèque Python (bintreesize.py)</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/td13-s2-exemples.py/">Fichier exemples</a></li>
+		</ul>
+	</div></div>
+	<div class="card red lighten-4">
+		<div class="card-content">
+		<span class="card-title">Midterm</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/midterm-s2-sujet.pdf/">Sujet</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/midterm-s2-reponses.pdf/">Feuille réponse</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/midterm-s2-correction.pdf/">Correction</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Chapitre 14 : AVL</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td14-s2-sujet.pdf/">Sujet</a>
+	</div></div>
+	<div class="card red lighten-4">
+		<div class="card-content">
+		<span class="card-title">Partiel</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/partiel-s2-sujet.pdf/">Sujet</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/partiel-s2-reponses.pdf/">Feuille réponse</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/partiel-s2-corrige.pdf/">Correction</a>
+	</div></div>
+{% endblock %}

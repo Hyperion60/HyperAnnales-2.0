@@ -1,0 +1,9 @@
+{% extends "base-red.html" %}
+{% block content %}
+	<h2>Echec de l'ouverture du fichier !</h2>
+	<p>
+		Suite à des menaces ce fichier à été déréférencé. Merci de votre compréhension.
+	</p>
+	<h3><a href="/{{ annee }}/{{ semestre }}/{{ matiere}}">Précedent</a></h3>
+	<h3><a href="/">Retour à l'accueil</a></h3>
+{% endblock %}

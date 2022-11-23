@@ -1,0 +1,77 @@
+upstream django {
+	server 127.0.0.1:9090;
+}
+
+server {
+	listen 80;
+	server_name www.annales.hyperion.tf;
+	rewrite ^ https://annales.hyperion.tf;
+}
+
+server {
+	server_name annales.hyperion.tf;
+	
+	location / {
+		uwsgi_pass django;
+		include /etc/nginx/uwsgi_params;
+	}
+	location /static/ {
+		alias /usr/lib/python3/dist-packages/django/contrib/admin/static/;
+	}
+
+	location /favicon.ico {
+		alias /home/hyperion/HyperAnnales/static/favicon.ico;
+	}
+
+	location /robots.txt {
+		alias /home/hyperion/HyperAnnales/static/robot.txt;
+	}
+
+#	if ($host = annales.hyperion.tf) {
+#		return 301 https://annales.hyperion.tf:443;
+#	}
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/packup.hyperion.tf/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/packup.hyperion.tf/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+
+server {
+	listen 80;
+	server_name annales.hyperion.tf;
+
+	sendfile on;
+	client_max_body_size 20M;
+	keepalive_timeout 0;
+
+	location / {
+		uwsgi_pass django;
+		include uwsgi_params;
+		proxy_pass http://annales.hyperion.tf;
+		proxy_redirect off;
+		proxy_set_header Host $http_host;
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_set_header X-Forwarded-Proto $scheme;
+	}
+	location /static/ {
+		alias /usr/lib/python3/dist-packages/django/contrib/admin/static/;
+	}
+}
+
+
+server {
+    if ($host = annales.hyperion.tf) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+	listen 80;
+	server_name annales.hyperion.tf;
+    return 404; # managed by Certbot
+
+
+}

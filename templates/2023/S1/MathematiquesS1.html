@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+	<h2>Semestre 1 | Mathématiques</h2>
+	<p>
+		Liste des différents chapitres :
+	</p>
+	<div id="chapitre">
+		<h3>Séminaire</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/seminaire-maths.pdf/">Sujet du TD</a></li>
+		</ul>
+	</div>
+	<div id="chapitre">
+		<h3>Chapitre 2 : Dénombrement Probabilités</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/maths-proba.pdf/">Sujet du TD</a></li>
+		</ul>
+	</div>
+	<!--<div id="chapitre">
+		<h3>Partiel</h3>
+		<ul id="details-chapitre">
+			<li><a href="/static/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/partiel-s1-sujet.pdf">Sujet</a></li>
+			<!--<li><a href="/PDF/{{ annee }}/{{ semestre }}/{{ matiere }}/Partiel/correction.pdf">Correction</a></li>
+		</ul>
+	</div>-->
+{% endblock %}

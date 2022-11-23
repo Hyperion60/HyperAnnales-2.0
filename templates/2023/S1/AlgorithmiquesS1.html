@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block content %}
+	<h2>Semestre 1 | Algorithmiques</h2>
+	<p>
+		Liste des différents TD :
+	</p>
+	<div id="chapitre">
+		<h3>Documents</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Memo-Caml.pdf/">Memo CamL</a></li>
+			<!--<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Seminaire-S1.pdf/">Sujet Séminaire</a></li>-->
+		</ul>
+	</div>
+	<div id="chapitre">
+		<h3>Séminaire</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Seminaire-S1.pdf/">Sujet du TD</a></li>
+			<li><a href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/Seminaire_S1.zip/">Correction</a></li>
+		</ul>
+	</div>
+	<div id="chapitre">
+		<h3>TD 1-CamL : Premier pas en CamL</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td1-s1-sujet.pdf/">Sujet du TD</a></li>
+			<li><a href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/td1-s1-test.zip/">Fichiers de tests</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/td1-s1-correction-enigmes.ml/">Correction Enigmes</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/td1-s1-correction-dates.ml/">Correction Dates</a></li>
+		</ul>
+	</div>
+	<div id="chapitre">
+		<h3>TD4-CamL : Récursivité</h3>
+		<ul id="details-chapitre">
+			<!--<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td5-S1-listes.pdf/">Sujet du TD</a></li>-->
+			<li><a href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/Récursivité.zip/">Correction</a></li>
+		</ul>
+	</div>
+	<div id="chapitre">
+		<h3>TD5-CamL : Les listes</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td5-S1-listes.pdf/">Sujet du TD</a></li>
+			<li><a href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/Listes.zip/">Correction</a></li>
+		</ul>
+	</div>
+	<div id="chapitre">
+		<h3>TD6-CamL : Ordre supérieur</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td6-S1-ordres.pdf/">Sujet du TD</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/td6_first.ml/">Correction TD Partie 1</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/td6_lists.ml/">Correction TD Partie 2</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/td6_fold.ml/">Correction TD Partie 3</a></li>
+		</ul>
+	</div>
+	<div id="chapitre-controle">
+		<h3>Midterm</h3>
+		<ul id="details-chapitre">
+			<li><a href="#">En attente...</a></li>
+		</ul>
+	</div>
+	<div id="chapitre">
+		<h3>TD1 : Imperative...</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_td1-basics_fr.pdf/">Sujet du TD</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/ex_script-td0.py/">Correction initiale</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/td1_max3.py/">Correction TD Partie 1</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/td1_tomorrow.py/">Correction TD Partie 2</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/td1_list9.py/">Correction TD Partie 3</a></li>
+		</ul>
+	</div>
+	<div id="chapitre">
+		<h3>TD2 : Loops</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_td2-loops_fr.pdf/">Sujet du TD</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_td2_loops_1.py/">Correction TD Partie 1</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_td2_loops_2.py/">Correction TD Partie 2</a></li>
+		</ul>
+	</div>
+	<div id="chapitre">
+		<h3>TD3 : Strings</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_td3-strings_fr.pdf/">Sujet du TD</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_td3_strings_1.py/">Correction TD Partie 1</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_td3_strings_2.py/">Correction TD Partie 2</a></li>
+		</ul>
+	</div>
+	<div id="chapitre">
+		<h3>TD4 : Listes</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_td4-lists_fr.pdf/">Sujet du TD</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_td4_lists_1.py/">Correction TD Partie 1</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_td4_lists_2.py/">Correction TD Partie 2</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_td4_lists_3.py/">Correction TD Partie 3</a></li>
+			<li><a href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_td4_lists_4.py/">Correction TD Partie 4</a></li>
+		</ul>
+	</div>
+	<div id="chapitre-controle">
+		<h3>Partiel</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_P1_jan19_fr.pdf/">Sujet</a>
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_P1_jan19_reponses_fr.pdf/">Feuille réponse</a>
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/S1_P1_jan19_correction_fr.pdf/">Correction</a>
+		</ul>
+	</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="card green lighten-4">
+		<div class="card-content">
+		<span class="card-title">Bibliothèques Python</span>
+			<a class="waves-effect waves-light btn blue" href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/algopy.zip/">Algopy</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Chapitre 0 : algo toolbox et "Pythonneries"</span>
+			<a class="waves-effect waves-light btn" href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/td0-s3-sujet.zip/">Sujet du TD (version HTML)</a>
+			<a class="waves-effect waves-light btn" href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/td0-s3-sujet.py/">Sujet du TD (version python)</a>
+			<a class="waves-effect waves-light btn" href="/pdf/py/{{ annee }}/{{ semestre }}/{{ matiere }}/td0-s3-sujet.ipynb/">Sujet du TD (version jupyter)</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Chapitre 1 : Arbres Généraux</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td1-s3-sujet.pdf/">Sujet</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Chapitre 2 : Arbres 2-3-4</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td-s3-02.pdf/">Sujet</a>
+	</div></div>
+	<div class="card red lighten-4">
+		<div class="card-content">
+		<span class="card-title">Midterm</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/S3_C3_2018_fr.pdf/">Sujet</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/S3_C3_2018_reponses_fr.pdf/">Feuille réponse</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/S3_C3_2018_correction_fr.pdf/">Correction</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Chapitre 3 : Graphes</span>
+			<ul>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/S3_td3-graphs_fr.pdf/">Sujet</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/exemple_graph.zip/">Exemples de Graphes</a></li>
+			</ul>
+	</div></div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+	<h2>Semestre 1 | Electronique</h2>
+	<p>
+		Liste des différents chapitres :
+	</p>
+	<div id="chapitre">
+		<h3>Chapitre 1 : Association de résistance</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td-s1-01.pdf/">Sujet du TD</a></li>
+		</ul>
+	</div>
+	<div id="chapitre">
+		<h3>Chapitre 2 : Lois fondamentales</h3>
+		<ul id="details-chapitre">
+			<li><a href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td-s1-02.pdf/">Sujet du TD</a></li>
+		</ul>
+	</div>
+{% endblock %}

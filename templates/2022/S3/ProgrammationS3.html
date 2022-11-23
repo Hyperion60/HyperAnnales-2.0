@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Informations utiles</span>
+			<a class="waves-effect waves-light btn" href="https://wiki-prog.infoprepa.epita.fr/index.php/EPITA:Programmation">Wiki-Prog Accueil</a>
+			<a class="waves-effect waves-light btn" href="https://slashvar.github.io/2017/02/13/using-gnu-make.html">Wiki-Prog : Guide d'utilisation GNU-Make</a>
+			<a class="waves-effect waves-light btn" href="https://wiki-prog.infoprepa.epita.fr/index.php/Practical:GIT">Wiki-Prog : Paramétrer GIT</a>
+	</div></div>
+	<div class="card green lighten-4">
+		<div class="card-content">
+		<span class="card-title">Projet S3</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/project_s3_fr.pdf/">Sujet FR</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/project_s3_en.pdf/">Sujet US</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Cours de Programmation</span>
+			<ul>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_1.pdf/">Introduction</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_2.pdf/">Compilation et exécution de processus</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_3.pdf/">Concepts de programmation communs</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_4.pdf/">Tableaux et chaînes de caractères</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_5.pdf/">Pointeurs</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_6.pdf/">Allocation dynamique de la mémoire</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_7.pdf/">Structures, Listes, Files, Arbres</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_8.pdf/">Mémoire</a></li>
+			</ul>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">TP de Programmation</span>
+		<ul>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_tp1.zip/">TP1 : L'interface en ligne de commande (CLI)</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_tp2.zip/">TP2 : Programmation Basique</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_tp3.zip/">TP3 : Tableaux et SDL</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_tp4.zip/">TP4 : Matrices et chaînes de caractères</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_tp5.zip/">TP5 : Pointeurs</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_tp6.zip/">TP6 : Listes et Vecteurs</a></li>
+			<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/prog_tp7.zip/">TP7 : Tables de hash</a></li>
+			</ul>
+	</div></div>
+{% endblock %}

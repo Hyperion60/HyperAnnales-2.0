@@ -1,0 +1,50 @@
+{% extends "base-red.html" %}
+{% block content %}
+	{% if user.is_authenticated %}
+	<div class="card red lighten-4">
+		<div class="card-content">
+		<span class="card-title">Vous êtes déjà connecté !</span>
+			<a class="waves-effect waves-light btn" href="/">Accueil</a>
+	</div></div>
+	{% else %}
+	<h3>Se connecter</h3>
+    {% if error is not None %} 
+	<div class="container">
+        <div class="center card-panel red accent-3">
+            {{ error }}
+        </div>
+    </div>
+    </br>
+    {% endif %}
+    {% if passwd is not None %} 
+	<div class="container">
+        <div class="center card-panel red accent-3">
+            {{ passwd }}
+        </div>
+    </div>
+    {% endif %}
+    <form class="site-form" action="/login/?next={{ redirect_to }}" method="post">
+		{% csrf_token %}
+		<div class="row">   
+			<div class="input-field col s12">
+				<input maxlength="150" id="id_username" type="text" name="username" required autofocus/>
+				<label class="active" for="id_username">Nom d'utilisateur</label>
+			</div>
+		</div>
+  		<div class="row">
+			<div class="input-field col s12">
+				<input id="id_password" name="password" type="password" required/>
+				<label class="active" for="id_password">Mot de passe</label>
+			</div>
+		</div>
+		<div class="center">
+			<input class="waves-effect waves-light btn blue lighten-2" type="submit" value="Login"/>
+        </div>
+    </form>
+	<p style="text-decoration: underline black;"><a href="/password_reset/password_reset/">Mot de passe perdu ?</a></p>
+	<div class="card grey lighten-2">
+		<div class="card-content">
+		<span class="card-content">Des problèmes pour se connecter ? Contactez-moi sur Discord, je suis présent sur les serveurs EPITA 2022 et 2023</span>
+	</div></div>
+	{% endif %}
+{% endblock %}

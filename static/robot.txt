@@ -1,0 +1,15 @@
+User-agent: Googlebot
+Allow: /
+Disallow: /activate/
+Disallow: /login/
+Disallow: /logout/
+Disallow: /signup/
+User-agent: HTTrack
+User-agent: HTTrack 3.0
+User-agent: wget
+User-agent: MS Search 4.0 Robot
+User-agent: MS Search 5.0 Robot
+User-agent: YandexBot
+User-agent: MJ12bot
+User-agent: *
+Disallow: /

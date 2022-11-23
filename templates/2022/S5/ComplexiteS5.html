@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="card green lighten-4">
+		<div class="card-content">
+		<span class="card-title">Site internet LRDE</span>
+			<a class="waves-effect waves-light btn blue" href="https://www.lrde.epita.fr/~adl/ens/algo/">Root</a>
+			<a class="waves-effect waves-light btn blue" href="https://www.lrde.epita.fr/~adl/ens/algo/exams/">Annales d'examens</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Introduction</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/intro_cpx.pdf/">Cours d'introduction</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/pdf_cpx.pdf/">PDF intro + seminaire</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Seminaire Complexité</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cours_cpx_1.pdf/">Cours</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cpx_td_sujet.pdf/">Sujet TD</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cpx_td1.pdf/">TD1</a>
+			<a class="waves-effect waves-light btn disabled" href="#">TD2</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cpx_td3.pdf/">TD3</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cpx_td4.pdf/">TD4</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cpx_td5.pdf/">TD5</a>
+	</div></div>
+	<div class="card red lighten-4">
+		<div class="card-content">
+		<span class="card-title">QCM</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/2022_S5_CPX_01.pdf/">Correction QCM 01</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/2022_S5_CPX_02.pdf/">Correction QCM 02</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/verso_qcm.pdf/">Verso QCM 02</a>
+		</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Cours</span>
+			<a class="waves-effect waves-light btn blue" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cours_cpx_3.pdf/">Cours 31/10/19</a>
+			<a class="waves-effect waves-light btn blue" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cours_cpx_4.pdf/">Cours 14/11/19</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Tableau Amphi</span>
+			<a class="waves-effect waves-light btn blue" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cours_cpx_3.pdf/">Cours 31/10/19</a>
+			<a class="waves-effect waves-light btn blue" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cours_cpx_4.pdf/">Cours 14/11/19</a>
+	</div></div>
+{% endblock %}

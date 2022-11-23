@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="card green lighten-4">
+		<div class="card-content">
+		<span class="card-title">Livret-OC</span>
+			<a class="waves-effect waves-light btn blue" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Livret-OC.pdf/">Livret</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Séance n°1 - 15/01/2019</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/AnglaisOC-Seance1.pdf/">Prises de notes</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Worksheet1.pdf/">Document Anglais</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Texte Journaliste TE</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Texte_TE.pdf/">Texte PDF</a>
+	</div></div>
+	<div class="card red lighten-4">
+		<div class="card-content">
+		<span class="card-title">Projet Anglais-TE</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Projet_Anglais_TE.pdf/">Consignes</a>
+	</div></div>
+{% endblock %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" type="image/png" href="/static/hyperion/css/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/static/hyperion/css/style.css">
+		<title>HyperAnnales</title>
+	</head>
+	
+	<body>
+		<header><a href="/">
+			<div class="tete1">HYPERANNALES</div>
+			<div class="tete2">Les Annales, les TD, les corrigés</div>
+			</a>
+		</header>
+		<!-- Menu de navigation site -->
+		<div id="menu-vertical">
+		</div>
+		<!-- Fin Menu de navigation du site -->
+		<p>
+		{{url_AlgoS1}}
+		</p>
+		
+		<section id="content">
+			{% block content %}{% endblock %}
+		</section>
+		
+		<footer style="margin-top:1em;">
+		<div id="footer"></div>
+		<p id="foot">Site créé par Hyperion</p>
+		
+		</footer>
+	</body>
+</html>

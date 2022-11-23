@@ -1,0 +1,20 @@
+﻿{% extends "base.html" %}
+{% block content %}
+	<div class="card green lighten-4">
+		<div class="card-content">
+		<span class="card-title">Site internet LRDE</span>
+			<a class="waves-effect waves-light btn blue" href="https://www.lrde.epita.fr/~akim/thl/">Root</a>
+			<a class="waves-effect waves-light btn blue" href="https://www.lrde.epita.fr/~akim/thl/download/">Code source cours</a>
+			<a class="waves-effect waves-light btn blue" href="https://www.lrde.epita.fr/~akim/thl/exams/">Annales examens</a>
+			<a class="waves-effect waves-light btn blue" href="https://www.lrde.epita.fr/~akim/thl/lecture-notes/">Cours PDF</a>
+	</div></div>
+	
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Cours Amphi</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cours_thl_1.pdf/">Cours du 01/10/19 au 11/11/19</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cours_thl_2.pdf/">Cours du 18/11/19</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cours_thl_3.pdf/">Cours du 25/11/19</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cours_thl_4.pdf/">Cours du 09/12/19</a>
+	</div></div>
+{% endblock %}

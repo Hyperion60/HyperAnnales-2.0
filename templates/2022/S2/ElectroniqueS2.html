@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="card white lighten-4">
+		<div class="card-content">
+		<span class="card-content">Il existe un polycopié avec le cours intégral ainsi que des fiches révisions et des exercices (+ corrigé) disponible sur le site mastercorp.epita.eu</span>
+		<span class="card-content"><i class="tiny material-icons">announcement</i>Attention le pdf est lourd (122 Mo) !</span>
+			<a class="waves-effect waves-light btn" href="http://mastercorp.epita.eu/isup/cours/elec/isup-2018/livret_elec.pdf">Cours</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Chapitre 6 : Régime variable</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/cours-variable.pdf/">Cours</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td6-s2-sujet.pdf/">Sujet</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td6-s2-correction.pdf/">Correction</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Chapitre 7 : Réseaux linéaires en régime sinusoïdal forcé</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td7-s2-fiche.pdf/">Fiche Conductance</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td7-s2-sujet.pdf/">Sujet</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td7-s2-correction.pdf/">Correction</a>
+	</div></div>
+	<div class="card red lighten-4">
+		<div class="card-content">
+		<span class="card-title">Midterm</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/midterm-s2-sujet.pdf/">Sujet</a>
+	</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Chapitre 8 : Les filtres</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td8-s2-sujet.pdf/">Sujet</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/td8-s2-correction.pdf/">Correction</a>
+	</div></div>
+	<div class="card red lighten-4">
+		<div class="card-content">
+		<span class="card-title">Partiel</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/partiel-s2-sujet.pdf/">Sujet</a>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/partiel-s2-correction.pdf/">Correction</a>
+	</div></div>
+{% endblock %}

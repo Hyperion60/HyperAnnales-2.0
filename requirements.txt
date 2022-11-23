@@ -1,0 +1,7 @@
+Django==2.2.*
+django-request==1.5.5
+uWSGI==2.0.18
+django-sendfile==0.3.*
+django-password-reset
+django-prometheus
+six

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+	<div class="card green lighten-4">
+		<div class="card-content">
+		<span class="card-title">Site Debug Pro</span>
+			<a class="waves-effect waves-light btn" href="http://www.debug-pro.com/epita/prog/s4/">Site</a>
+		</div></div>
+	<div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Consigne Projet S4</span>
+			<a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/Projet-informatique-S4.pdf/">Cahier Consigne</a>
+		</div></div>
+    <div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">Cours de Programmation</span>
+			<ul>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/network_programming.pdf/">Network Programming</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/threads.pdf/">Threads</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/rust_introduction.pdf/">Rust Introduction</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/rust_compiling_and_running.pdf/">Rust : Compiling and Running</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/rust_common_programming_concepts.pdf/">Rust : Common Programming Concept</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/rust_strings.pdf/">Rust : Strings</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/rust_arrays_vectors.pdf/">Rust : Arrays and Vectors</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/rust_closures_iterators.pdf/">Rust : Closures and Iterators</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/rust_structures_enumerations.pdf/">Rust : Structures and Enumerations</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/{{ annee }}/{{ semestre }}/{{ matiere }}/rust_pattern_matching.pdf/">Rust : Pattern Matching</a></li>
+			</ul>
+	</div></div>
+    <div class="card cyan lighten-4">
+		<div class="card-content">
+		<span class="card-title">TP de Programmation (zip)</span>
+			<ul>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/TP1.zip/">TP1 : Client TCP</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/TP2.zip/">TP2 : Serveur TCP</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/TP3.zip/">TP3 : Threads</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/TP4.zip/">TP4 : Serveur Multithreading</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/TP5.zip/">TP5 : Rust : Programmation Basique</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/TP6.zip/">TP6 : Rust : Chaîne de caractères</a></li>
+				<li style="margin-bottom: 15px;"><a class="waves-effect waves-light btn" href="/pdf/zip/{{ annee }}/{{ semestre }}/{{ matiere }}/TP7.zip/">TP7 : Rust : Miscellaneous</a></li>
+			</ul>
+		</div></div>
+    <!--<img src="/static/hyperion/img/Finder_debugpro.png">-->
+{% endblock %}

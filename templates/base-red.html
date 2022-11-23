@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Les annales, les TD et les corrections de l'EPITA"/>
+	<meta name="keywords" content="annales, examens, exams, TD, correction, corrigés, epita, sup, spe"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="shortcut icon" type="image/png" href="https://static.hyperion.tf/hyperion/img/favicon.ico">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+	<meta name="google-site-verification" content="q-f0qLVu1W1_DvY0YfSZIsat9_cZpqE-c2tTBUcsnI0" />
+	<title>HyperAnnales - EPITA</title>
+</head>
+
+<body style="background-color: #eeeeee">
+<div class="row">
+<header class="">
+	<h1 class="center" style="color:#000000;">HyperAnnales</h1>
+</header>
+<div class="divider"></div>
+<div class="col s3">
+	
+	<ul class="collapsible">
+	<li>
+		<a href="/" style="color:black;"><div class="collapsible-header waves-effect">Accueil</div></a>
+	</li>
+    <li>
+      <a href="/Docs/" style="color:black;"><div class="collapsible-header waves-effect">Documents</div></a>
+    </li>
+	{% if user.is_authenticated %}
+		<li><div class="waves-effect"><form class="logout-link" action="/logout/" method="POST">
+				{% csrf_token %}
+				<button class="collapsible-header red waves-effect btn-large" type="submit">Déconnexion</button>
+			</form></div>
+		</li>
+		{% else %}
+		<li><a href="/login/?next={{ request.path }}" style="color:black;"><div class="collapsible-header waves-effect">Connexion</div></a></li>
+		<li><a href="/signup" style="color:black;"><div class="collapsible-header waves-effect">S'incrire</div></a></li>
+		{% endif %}
+	</ul>
+</div>
+<div class="col s9">
+	<div class="col s12">
+				
+		{% block content %}{% endblock %}
+	</div>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+<script>
+ $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+</script>
+</body>
+</html>
+
